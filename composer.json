@@ -1,10 +1,17 @@
 {
     "name": "vkabachenko/phpuser",
-    "description": ".",
+    "description": "Simple non-database user class for yii2 projects",
     "homepage": "https://github.com/vkabachenko/phpuser",
-    "keywords": ["yii2"],
+    "keywords": ["yii2","user","model"],
     "type": "yii2-extension",
-    "license": "BSD 3-Clause",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Viktor Kabachenko",
+            "email": "vkabachenko@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "yiisoft/yii2": "*"
     },
