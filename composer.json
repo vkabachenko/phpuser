@@ -1,0 +1,16 @@
+{
+    "name": "vkabachenko/phpuser",
+    "description": ".",
+    "homepage": "https://github.com/vkabachenko/phpuser",
+    "keywords": ["yii2"],
+    "type": "yii2-extension",
+    "license": "BSD 3-Clause",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "vkabachenko\\phpuser\\": ""
+        }
+    }
+}
