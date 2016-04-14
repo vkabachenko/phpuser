@@ -54,6 +54,7 @@ php yii user/add
 and enter username and password for the user. Appropriate data would be stored in configuration file `users.php`.
 
 **Merge user's data as application parameter**
+
 Merge `users.php` file with other parameters files. For example in `@common/config/main.php`
 
 ```
@@ -65,7 +66,7 @@ $params = array_merge(
 );
 ```
 
-***Use class `vkabachenko\phpuser\User.php` in application***
+**Use class `vkabachenko\phpuser\User.php` in application**
 
 Now you can use model `vkabachenko\phpuser\User.php` for identifying user throughout the application: in `identityClass` at the `components/user` config section, in `login` action and so on. 
 
