@@ -41,16 +41,16 @@ class User extends Model implements IdentityInterface
      */
     public static function findIdentity($id)
     {
+        if (!array_key_exists($id, \Yii::$app->params['users'])) {
+            return null;
+        }
+
         $userData = \Yii::$app->params['users'][$id];
-        if (isset($userData)) {
             return new self([
                 'username' => $id,
                 'password' => $userData['password'],
                 'authkey' => $userData['authkey']
             ]);
-        } else {
-            return null;
-        }
     }
 
     /**
